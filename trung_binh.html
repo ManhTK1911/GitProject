@@ -11,16 +11,16 @@
     {
         var tbx;
         let x=0;
-        let n = prompt("Nhập số môn học: ");
-        var mang = [n];
+        let n = parseInt(prompt("Nhập số môn học: "));
+        var mang = [];
         for (var i = 0; i < n; i++)
-        {mang[i] = prompt("Nhập điểm môn thứ " + (i+1) + "");}
+        mang[i] = prompt("Nhập điểm môn thứ " + (i+1) + "");
         for (var i=0;i<n;i++)
-            x=x+mang[i]
-        tbx=x/n
-        console.log(x)
+            x=x+parseFloat(mang[i])
+        tbx=x/n;
         console.log(mang)
-         alert("Điểm trung bình là: " + tbx + "")
+        console.log(x)
+        alert("Diem trung binh la: " + tbx + "")
     }
     ss()
 </script>
