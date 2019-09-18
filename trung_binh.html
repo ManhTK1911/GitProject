@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Điểm trung bình</title>
+</head>
+<body>
+<script language="javascript">
+
+    function ss()
+    {
+        var tbx;
+        let x=0;
+        let n = prompt("Nhập số môn học: ");
+        var mang = [n];
+        for (var i = 0; i < n; i++)
+        {mang[i] = prompt("Nhập điểm môn thứ " + (i+1) + "");}
+        for (var i=0;i<n;i++)
+            x=x+mang[i]
+        tbx=x/n
+        console.log(x)
+        console.log(mang)
+         alert("Điểm trung bình là: " + tbx + "")
+    }
+    ss()
+</script>
+</body>
+</html>
